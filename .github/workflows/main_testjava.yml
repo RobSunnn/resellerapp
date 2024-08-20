@@ -49,6 +49,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'testjava'
-          slot-name: 'Production'
           package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6BC1F734AB54A9DB5990FC81D5365F2 }}
