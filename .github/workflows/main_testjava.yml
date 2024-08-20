@@ -51,3 +51,6 @@ jobs:
           app-name: 'testjava'
           package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6BC1F734AB54A9DB5990FC81D5365F2 }}
+      - name: Set Environment Variables
+        run: |
+          az webapp config appsettings set --name testjava --resource-group testjavarg --settings AZURE_MYSQL_CONNECTIONSTRING=${{ secrets.AZURE_MYSQL_CONNECTIONSTRING }}
