@@ -15,7 +15,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     password: '1234'
     username: 'root'
-    url: jdbc:mysql://localhost:3306/resellerApp?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
+    url: jdbc:mysql://java-test-server.mysql.database.azure.com:3306/java-test-database?serverTimezone=UTC&sslmode=required&user=vhcveonfqp&password=Cruzt%244VgISLy1se
 logging:
   level:
     org:
