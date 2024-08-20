@@ -13,9 +13,9 @@ spring:
         enabled: 'true'
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    password: 'Cruzt%244VgISLy1se'
-    username: 'vhcveonfqp'
-    url: jdbc:mysql://java-test-server.mysql.database.azure.com:3306/java-test-database?serverTimezone=UTC&sslmode=required&user=vhcveonfqp&password=Cruzt%244VgISLy1se
+    password: ${DB_PASS}
+    username: ${DB_USER}
+    url: ${DATABASE_URL}
 logging:
   level:
     org:
